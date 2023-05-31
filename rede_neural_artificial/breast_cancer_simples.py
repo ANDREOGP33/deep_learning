@@ -15,4 +15,4 @@ classificador.add(Dense(units = 16, activation = 'relu', kernel_initializer = 'r
 classificador.add(Dense(units = 1, activation = 'sigmoid'))
 
 classificador.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['binary_accuracy'])
-classificador.fit(previsores_treinamento,classe_treinamento,batch_size = 10, epochs = 1000)
+classificador.fit(previsores_treinamento,classe_treinamento,batch_size = 10, epochs = 100)
